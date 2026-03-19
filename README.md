@@ -1,4 +1,4 @@
-# ChainGuard v2: Cross-Chain Compliance Shield Hook
+# ChainGuard: Cross-Chain Compliance Shield Hook
 
 **A Uniswap v4 hook that enforces autonomous cross-chain compliance via a 4-tier risk system. When a sanctioned address on Ethereum sends funds to a fresh wallet, that wallet is automatically flagged on Unichain before its next swap — with no off-chain infrastructure or centralized relayers.**
 
@@ -8,7 +8,7 @@ Illicit funds flow freely through DEXes. Existing compliance solutions are passi
 
 ## Solution
 
-ChainGuard v2 introduces **Hook Safety as a Service** — a cross-chain risk monitoring system with four enforcement tiers. It:
+ChainGuard introduces **Hook Safety as a Service** — a cross-chain risk monitoring system with four enforcement tiers. It:
 
 1. **Monitors** Ethereum USDC transfers, Chainalysis oracle events, and Circle USDC blacklist events via 3 scoped Reactive Network subscriptions
 2. **Propagates taint** when blacklisted addresses send USDC to new wallets (SuspiciousNew tier)
